@@ -1,0 +1,128 @@
+.container {
+    font-size: 15px;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    max-width: 1440px;
+    margin: 50px;
+}
+
+.titles-header {
+    text-align: center;
+    width: 60%;
+    margin: 0 auto;
+    line-height: 1.2;
+}
+
+.titles-header h1 {
+    font-size: 1.8em;
+}
+
+.titles-header h1:first-child  {
+    font-weight: lighter;
+}
+
+.titles-header h1:last-child {
+    font-weight: 600;
+}
+
+.titles-header h3 {
+    font-weight: 200;
+    margin-top: 10px;
+}
+
+.cards-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 50px;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 5px;
+    margin: 12px;
+    padding: 20px;
+    line-height: 2.0;
+    display: flex;
+    flex-direction: column;
+    height: 150px;
+}
+
+.card h3 {
+    font-weight: 600;
+}
+
+.card p {
+    font-weight: 200;
+    font-size: 0.7em;
+}
+
+.card img {
+    height: 40px;
+    width: 40px;
+    margin-top: auto;
+    margin-left: auto;
+}
+
+.card-supervisor {
+    border-top: 2px solid hsl(180, 62%, 55%);
+    margin-top: 100px
+}
+
+.card-team {
+    border-top: 2px solid hsl(0, 78%, 62%);
+}
+
+.card-karma {
+    border-top: 2px solid hsl(34, 97%, 64%);
+}
+
+.card-calculator {
+    border-top: 2px solid hsl(212, 86%, 64%);
+    margin-top: 100px;
+}
+
+footer {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+    text-align: center;
+    margin: 0 auto;
+}
+
+@media (max-width: 400px) {
+    .container {
+        position: fixed;
+        overflow-y: hidden;
+    }
+
+    .titles-header {
+        width: 80%;
+    }
+
+    .titles-header h1 {
+        font-size: 0.9em;
+    }
+
+    .titles-header h3 {
+        font-size: 0.75em;
+    }
+
+    .cards-section {
+        display: grid;
+        grid-template-columns:  repeat(auto-fit, minmax(375px, 1fr));
+        margin-top: 50px;
+    }
+    
+    .card {
+        width: 200px;
+    }
+
+    .card-calculator {
+        margin-top: 0;
+    }
+
+    .card-supervisor {
+        margin-top: 0;
+    }
+}
