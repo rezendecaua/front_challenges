@@ -1,0 +1,66 @@
+.container {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    font-family: 'Josefin Sans', Arial, Helvetica, sans-serif;
+}
+
+.left-section {
+    display: grid;
+    grid-template-rows: 20% 60% 20%;
+    padding: 40px 60px;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-size: 3.0em;
+    letter-spacing: 10px;
+    font-weight: 600;
+}
+
+h1:first-child {
+    color: hsl(0, 36%, 70%);
+    font-weight: 300;
+}
+
+p {
+    color: hsl(0, 93%, 68%);
+    font-weight: 300;
+    line-height: 1.8;
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+.send-email {
+    position: relative;
+    display: inline-flex;
+}
+
+input {
+    border: 1px solid hsl(0, 36%, 70%);
+    border-radius: 30px;
+    height: 45px;
+    width: 100%;
+    text-indent: 30px;
+}
+
+button {
+    border: 1px solid hsl(0, 36%, 70%);
+    border-radius: 30px;
+    height: 50px;
+    width: 100px;
+    background: 
+        linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%)),
+        linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+
+@media only screen and (max-width: 1440px) {
+    .left-section {
+        padding: 80px 120px;
+    }
+}
